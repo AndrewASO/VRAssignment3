@@ -15,8 +15,7 @@ public class HeadMovement : MonoBehaviour {
         Vector3 horizontalForward = Vector3.ProjectOnPlane(camForward, Vector3.up).normalized;
 
         //Computing downward angle: 0 would be looking straight ahead, and positive would be looking down
-        float downAngle = Vector3.SignedAngle(horizontalForward, camForward, -Camera.main.transform.right);
-        //Signed angle gives positive when looking down since -right is used as an axis
+        float downAngle = Vector3.SignedAngle(horizontalForward, camForward, Camera.main.transform.right);
 
         //Check to see if downAngle goes beyond the tiltThreshold
         if(downAngle > tiltThreshold ) {
