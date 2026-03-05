@@ -2,14 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// This class is part of an example of how you can use UnityEvents with
-// basic MonoBehaviors to rapidly develop VR interactions.
-//
-// See: GazeOverEvent.cs
 public class SetMaterial : MonoBehaviour
 {
-    public void UpdateMaterial(Material newMat)
+    public Material[] materials;
+
+    private int currentIndex = 0;
+    private MeshRenderer meshRenderer;
+
+    void Start()
     {
-        GetComponent<MeshRenderer>().material = newMat;
+        meshRenderer = GetComponent<MeshRenderer>();
+    }
+
+    public void NextMaterial()
+    {
+        if (materials.Length == 0) return;
+
+        currentIndex++;
+
+        if (currentIndex >= materials.Length)
+        {
+            currentIndex = 0;
+        }
+
+        meshRenderer.material = materials[currentIndex];
+    }
+
+    public void PreviousMaterial()
+    {
+        if (materials.Length == 0) return;
+
+        currentIndex--;
+
+        if (currentIndex < 0)
+        {
+            currentIndex = materials.Length - 1;
+        }
+
+        meshRenderer.material = materials[currentIndex];
     }
 }
