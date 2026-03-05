@@ -14,6 +14,7 @@ public class SetMaterial : MonoBehaviour
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
+    //Func from original SetMaterial, everything else is from Library branch
     public void UpdateMaterial(Material newMat)
     {
         GetComponent<MeshRenderer>().material = newMat;
