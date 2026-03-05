@@ -9,7 +9,7 @@ using UnityEngine.Events;
 /// for gazing (in degrees) can be adjusted to allow for more generous, comfortable
 /// control.
 /// </summary>
-public class GazeOverEvent : MonoBehaviour
+public class GazeOverEvent2 : MonoBehaviour
 {
     /// <summary>
     /// Margin of error for a valid gaze. The number of degrees off from a direct
