@@ -11,6 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Heiser.unity
     guid: 37a4fe510ef31fa40aa0b080db73ce76
+  - enabled: 1
+    path: Assets/Scenes/Art.unity
+    guid: 281473275a38c7b479fcad588b4cb067
+  - enabled: 1
+    path: Assets/Scenes/College Hall.unity
+    guid: 8fac16edc048639478f25dc5e6194f04
+  - enabled: 1
+    path: Assets/Scenes/Ham.unity
+    guid: 38f24128c6a94254a88eea738c87cf61
+  - enabled: 1
+    path: Assets/Scenes/Library.unity
+    guid: 38678fb532f8dd749bea3eb57a59a74d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 750d5c5aaf77d8e44a37232c02d7258a,
       type: 2}
